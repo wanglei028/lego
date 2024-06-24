@@ -1,5 +1,6 @@
 <template>
   <h1>慕课乐高标准模版</h1>
+  <Hello msg="hello 啊" />
   <ul>
     <li>开箱即用</li>
     <li>typescript</li>
@@ -12,9 +13,11 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-
+import Hello from './components/Hello';
 export default defineComponent({
   name: 'App',
+  components: { Hello },
+
 });
 </script>
 
